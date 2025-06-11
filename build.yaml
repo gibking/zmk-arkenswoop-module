@@ -13,4 +13,4 @@
 #
 ---
 board: [ "nice_nano_v2" ]
-shield: [ "arkenswoop_left", "arkenswoop_left" ]
+shield: [ "arkenswoop_left", "arkenswoop_right" ]
