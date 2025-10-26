@@ -1,10 +1,4 @@
-/*
- * Copyright (c) 2022 Duccio Breschi
- *
- * SPDX-License-Identifier: MIT
- */
-
-#include "arkenswoop.dtsi"
+#include "arkenswoop_peripherals.dtsi"
 
 &kscan0 {
     diode-direction = "col2row";

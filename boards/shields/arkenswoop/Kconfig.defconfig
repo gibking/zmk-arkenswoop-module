@@ -1,13 +1,28 @@
-# Copyright (c) 2022 Duccio Breschi
-# SPDX-License-Identifier: MIT
-
-if SHIELD_ARKENSWOOP_LEFT
+if SHIELD_ARKENSWOOP_DONGLE
 
 config ZMK_KEYBOARD_NAME
-    default "arkenswoop"
+    default "arkenswoopd"
+
+config ZMK_SPLIT
+    default y
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
+
+config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+    default 2
+
+config BT_MAX_CONN
+    default 7
+
+config BT_MAX_PAIRED
+    default 7
+
+config DONGLE_SCREEN_AMBIENT_LIGHT
+    default y
+
+config DONGLE_SCREEN_SYSTEM_ICON
+    default 1
 
 endif
 
@@ -16,6 +31,8 @@ if SHIELD_ARKENSWOOP_LEFT || SHIELD_ARKENSWOOP_RIGHT
 config ZMK_SPLIT
     default y
 
+config ZMK_SPLIT_ROLE_CENTRAL
+    default n
 
 if ZMK_DISPLAY
 
